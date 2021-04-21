@@ -3,6 +3,8 @@ package com.vignette.as.client.javabean;
 import com.vignette.as.client.common.RequestParameters;
 import com.vignette.as.client.common.ref.ManagedObjectRef;
 import com.vignette.as.client.common.ref.ManagedObjectVCMRef;
+import com.vignette.as.client.exception.ApplicationException;
+import com.vignette.as.client.exception.ValidationException;
 
 public class ManagedObject  {
 
@@ -21,7 +23,7 @@ public class ManagedObject  {
 		return null;
 	}
 
-	public static ContentInstance findById(ManagedObjectRef ref) {
+	public static ContentInstance findById(ManagedObjectRef ref) throws ApplicationException, ValidationException {
 		// TODO Auto-generated method stub
 		return null;
 	}
