@@ -7,7 +7,7 @@ import com.vignette.as.client.common.ref.ChannelRef;
 import com.vignette.as.client.common.ref.ManagedObjectVCMRef;
 import com.vignette.as.client.exception.ApplicationException;
 
-public class ContentInstance extends ManagedObject{
+public class ContentInstance extends ContentItem {
 
 	public AttributeData getAttribute(String srcXmlName) throws ApplicationException {
 		// TODO Auto-generated method stub
@@ -34,7 +34,7 @@ public class ContentInstance extends ManagedObject{
 		return null;
 	}
 
-	public ChannelRef[] getChannelAssociations() {
+	public ChannelRef[] getChannelAssociations() throws AuthorizationException {
 		// TODO Auto-generated method stub
 		return null;
 	}

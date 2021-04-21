@@ -4,7 +4,11 @@ import java.util.List;
 
 import com.vignette.as.client.common.ref.SiteRef;
 
-public class Channel extends ManagedObject{
+public class Channel extends ManagedObject {
+
+	public Channel()  throws ApplicationException, ValidationException, RemoteException {
+		super();
+	}
 
 	public String getName() {
 		// TODO Auto-generated method stub
@@ -21,7 +25,7 @@ public class Channel extends ManagedObject{
 		return null;
 	}
 
-	public List<SiteRef> getSiteRefs() {
+	public List<SiteRef> getSiteRefs() throws ApplicationException {
 		// TODO Auto-generated method stub
 		return null;
 	}

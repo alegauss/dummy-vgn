@@ -2,7 +2,7 @@ package com.vignette.as.client.javabean;
 
 public class ObjectType extends ManagedObject {
 
-	public static ObjectType findByName(String contentType) {
+	public static ObjectType findByName(String contentType) throws ValidationException {
 		// TODO Auto-generated method stub
 		return null;
 	}

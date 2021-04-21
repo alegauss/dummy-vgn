@@ -13,9 +13,8 @@ public class AttributeData {
 		return null;
 	}
 
-	public AttributeDefinition getAttributeDefinition() {
+	public AttributeDefinition getAttributeDefinition() throws ApplicationException {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }

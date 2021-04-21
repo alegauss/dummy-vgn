@@ -10,14 +10,11 @@ public class IPagingList {
 		return null;
 	}
 
-	public Iterator<?> pageIterator(int pageSize) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	public int size() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	public Iterator pageIterator(int pageSize) throws ApplicationException {
 
+	}
 }
