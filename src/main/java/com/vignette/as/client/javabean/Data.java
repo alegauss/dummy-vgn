@@ -6,5 +6,9 @@ public class Data {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
