@@ -1,3 +1,3 @@
 # Dummy Vgn
 
-Empty class to allow compile dependencies.
+Empty classes to allow compile dependencies.
