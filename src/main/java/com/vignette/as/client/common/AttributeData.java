@@ -1,6 +1,7 @@
 package com.vignette.as.client.common;
 
 import com.vignette.as.client.common.ref.ObjectTypeRef;
+import com.vignette.as.client.exception.ApplicationException;
 
 public class AttributeData {
 

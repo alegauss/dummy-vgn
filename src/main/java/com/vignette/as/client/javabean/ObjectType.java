@@ -1,5 +1,7 @@
 package com.vignette.as.client.javabean;
 
+import com.vignette.as.client.exception.ValidationException;
+
 public class ObjectType extends ManagedObject {
 
 	public static ObjectType findByName(String contentType) throws ValidationException {

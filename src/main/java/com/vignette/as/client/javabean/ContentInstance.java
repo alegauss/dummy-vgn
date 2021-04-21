@@ -6,6 +6,7 @@ import com.vignette.as.client.common.AttributeData;
 import com.vignette.as.client.common.ref.ChannelRef;
 import com.vignette.as.client.common.ref.ManagedObjectVCMRef;
 import com.vignette.as.client.exception.ApplicationException;
+import com.vignette.as.client.exception.AuthorizationException;
 
 public class ContentInstance extends ContentItem {
 

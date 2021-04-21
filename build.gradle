@@ -7,10 +7,15 @@ buildscript {
 
 apply plugin: 'java'
 
+group = 'com.alegauss'
 sourceCompatibility = 1.6
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
+jar {
+    archiveBaseName = 'dummy-vgn'
+    archiveVersion =  '0.3.0'
+}
 task compileOne (type: JavaCompile) {
     source = fileTree(dir: 'src', include: '**/*.java')
     classpath = files('build/classes/main')

@@ -1,5 +1,7 @@
 package com.vignette.as.client.javabean;
 
+import com.vignette.as.client.exception.ApplicationException;
+
 import java.util.Iterator;
 import java.util.List;
 
@@ -15,6 +17,6 @@ public class IPagingList {
 		return 0;
 	}
 	public Iterator pageIterator(int pageSize) throws ApplicationException {
-
+		return null;
 	}
 }

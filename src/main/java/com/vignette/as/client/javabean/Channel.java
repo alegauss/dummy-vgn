@@ -1,8 +1,11 @@
 package com.vignette.as.client.javabean;
 
+import java.rmi.RemoteException;
 import java.util.List;
 
 import com.vignette.as.client.common.ref.SiteRef;
+import com.vignette.as.client.exception.ApplicationException;
+import com.vignette.as.client.exception.ValidationException;
 
 public class Channel extends ManagedObject {
 
