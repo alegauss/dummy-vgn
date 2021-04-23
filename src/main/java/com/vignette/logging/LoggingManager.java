@@ -1,11 +1,15 @@
 package com.vignette.logging;
 
 import com.vignette.logging.context.ContextLogger;
+import org.apache.log4j.Logger;
 
-public class LoggingManager {
+public class LoggingManager extends Logger  {
+
+	protected LoggingManager(String name) {
+		super(name);
+	}
 
 	public static ContextLogger getContextLogger(Class<?> class1) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
