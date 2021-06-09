@@ -5,7 +5,7 @@ import com.vignette.as.client.common.ref.ManagedObjectRef;
 import com.vignette.as.client.common.ref.ManagedObjectVCMRef;
 import com.vignette.as.client.exception.ApplicationException;
 import com.vignette.as.client.exception.ValidationException;
-
+import com.vignette.as.client.common.ref.AsLocaleRef;
 public class ManagedObject  {
 
 	public static ContentInstance findByContentManagementId(ManagedObjectVCMRef managedObjectVCMRef) {
@@ -41,6 +41,10 @@ public class ManagedObject  {
 
 	public ObjectType getObjectType() {
 		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public AsLocaleRef getLocale() {
 		return null;
 	}
 
