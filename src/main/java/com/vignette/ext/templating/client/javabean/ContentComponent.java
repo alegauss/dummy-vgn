@@ -1,47 +1,28 @@
 package com.vignette.ext.templating.client.javabean;
 
 import com.vignette.as.client.common.AppObjectId;
-import com.vignette.as.client.common.AttributeData;
-import com.vignette.as.client.common.AttributeDefinitionData;
 import com.vignette.as.client.common.ref.AsLocaleRef;
 import com.vignette.as.client.common.ref.ContentTypeRef;
-import com.vignette.as.client.common.ref.ManagedObjectVCMRef;
 import com.vignette.as.client.exception.ApplicationException;
 import com.vignette.as.client.exception.AuthorizationException;
 import com.vignette.as.client.exception.ValidationException;
-import com.vignette.as.client.javabean.Channel;
 import com.vignette.as.client.javabean.ContentType;
-import com.vignette.as.client.javabean.IPagingList;
 import com.vignette.as.client.javabean.ManagedObject;
-import com.vignette.as.client.javabean.ObjectType;
-import com.vignette.as.client.javabean.Site;
 import com.vignette.as.client.javabean.StaticFile;
-import com.vignette.as.config.ConfigUtil;
 import com.vignette.as.server.event.AsPostPersistenceEvent;
 import com.vignette.as.server.event.AsPrePersistenceEvent;
 import com.vignette.ext.templating.cache.CachingDetail;
 import com.vignette.ext.templating.cache.rules.IRuleSet;
 import com.vignette.ext.templating.client.javabean.displayview.DisplayView;
 import com.vignette.ext.templating.util.RequestContext;
-import com.vignette.logging.LoggingManager;
-import com.vignette.logging.context.ContextLogger;
-import com.vignette.util.MsgObject;
-import com.vignette.util.VgnException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class ContentComponent extends VgnExtTemplatingObject implements IDisplayViewScriptEnabled, IDisplayParameterEnabledComponent {
-  private String displayName = null;
-  
-  private static ContextLogger LOG = LoggingManager.getContextLogger(ContentComponent.class);
-  
+ 
   public static final String COMPONENT_KEY_WIDGET_NAME = "";
   
   public static final String COMPONENT_ID_ATTRIB = "";
@@ -270,10 +251,6 @@ return null;
   
   public String getComponentName() throws ApplicationException {
     return null;
-  }
-  
-  private void validateLengthsOfFields() throws ApplicationException, ValidationException {
-   
   }
   
   protected static synchronized boolean inMgmtCDS() {

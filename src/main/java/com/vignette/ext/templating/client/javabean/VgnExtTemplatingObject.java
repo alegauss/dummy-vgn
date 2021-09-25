@@ -1,10 +1,5 @@
 package com.vignette.ext.templating.client.javabean;
 
-import com.vignette.as.client.common.ContentInstanceDBQuery;
-import com.vignette.as.client.common.ContentInstanceWhereClause;
-import com.vignette.as.client.common.Query;
-import com.vignette.as.client.common.RequestParameters;
-import com.vignette.as.client.common.WhereClause;
 import com.vignette.as.client.common.ref.ContentTypeRef;
 import com.vignette.as.client.common.ref.ManagedObjectVCMRef;
 import com.vignette.as.client.exception.ApplicationException;
@@ -12,17 +7,9 @@ import com.vignette.as.client.exception.AuthorizationException;
 import com.vignette.as.client.exception.ValidationException;
 import com.vignette.as.client.javabean.ContentInstance;
 import com.vignette.as.client.javabean.IPagingList;
-import com.vignette.as.client.javabean.QueryManager;
-import com.vignette.as.config.ConfigUtil;
 import com.vignette.as.server.event.AsPostPersistenceEvent;
 import com.vignette.as.server.event.AsPrePersistenceEvent;
-import com.vignette.config.client.common.ConfigException;
-import com.vignette.ext.templating.cache.CachingDetail;
 import com.vignette.ext.templating.cache.RenderedManagedObjectCacheKey;
-import com.vignette.ext.templating.util.CustomerMsg;
-import com.vignette.ext.templating.util.MsgObject;
-
-import java.rmi.RemoteException;
 
 public class VgnExtTemplatingObject extends ContentInstance implements ICacheableObject {
   static final long serialVersionUID = 1L;
@@ -62,12 +49,6 @@ public class VgnExtTemplatingObject extends ContentInstance implements ICacheabl
   
   protected boolean isInternal() {
     return true;
-  }
-  
-  private void maybeApproveObject() {
-  }
-  
-  private void maybeAuthorizeObject() throws ApplicationException, AuthorizationException, ValidationException {
   }
   
   protected void validateCachingAttributes(String attrTTL) throws ApplicationException, ValidationException {
