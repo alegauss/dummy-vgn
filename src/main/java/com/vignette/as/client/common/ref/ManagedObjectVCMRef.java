@@ -1,7 +1,7 @@
 package com.vignette.as.client.common.ref;
 
 import com.vignette.as.client.javabean.ContentInstance;
-import com.vignette.util.VgnIllegalArgumentException;
+import com.vignette.ext.templating.util.VgnIllegalArgumentException;
 
 public class ManagedObjectVCMRef {
 

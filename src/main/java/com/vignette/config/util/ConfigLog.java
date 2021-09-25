@@ -1,6 +1,6 @@
 package com.vignette.config.util;
 
-import com.vignette.util.VgnException;
+import com.vignette.ext.templating.util.VgnException;
 
 public class ConfigLog {
 

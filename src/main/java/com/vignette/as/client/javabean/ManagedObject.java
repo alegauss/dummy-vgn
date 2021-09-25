@@ -18,7 +18,7 @@ public class ManagedObject  {
 		return null;
 	}
 
-	public Object getName() {
+	public Object getName() throws ApplicationException {
 		// TODO Auto-generated method stub
 		return null;
 	}

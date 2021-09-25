@@ -1,7 +1,6 @@
 package com.vignette.logging;
 
 import com.vignette.logging.context.ContextLogger;
-import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 public class LoggingManager extends Logger  {
